@@ -10,7 +10,7 @@ import sys, os
 import json
 import requests
 
-def index(request):
+def address(request):
     parsed_data = []
     if request.method == 'POST':
         addr = request.POST.get('address')
@@ -35,7 +35,8 @@ def index(request):
                 btc_data['block_height'] = "Unavailable"
                 btc_data['confirmations'] = "Unavailable"
         parsed_data.append(btc_data)
-    return render(request, '../templates/profile.html', {'data': parsed_data})
+    return render(request, '../
+templates/profile.html', {'data': parsed_data})
 
 def ethereum_market_price():
 	""" 

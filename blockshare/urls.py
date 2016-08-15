@@ -20,5 +20,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^bitcoin$', blockshare.views.bitcoin),
     url(r'^ether$', blockshare.views.ether),
-    url(r'^$', blockshare.views.address),
+    url(r'^$', blockshare.views.index),
 ]
