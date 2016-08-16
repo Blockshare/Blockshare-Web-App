@@ -40,8 +40,8 @@ from two1.wallet import Two1Wallet
     The quoted string on the right hand side is the name of the environment
     variable that is loaded by the dotenv package.
 '''
-TWO1_WALLET_MNEMONIC = os.environ.get("TWO1_WALLET_MNEMONIC")
-TWO1_USERNAME = os.environ.get("TWO1_USERNAME")
+TWO1_USERNAME="cponeillmain"
+TWO1_WALLET_MNEMONIC="carpet current fade cream tackle account buzz absent obvious weapon slogan material"
 WALLET = Two1Wallet.import_from_mnemonic(mnemonic=TWO1_WALLET_MNEMONIC)
 
 
